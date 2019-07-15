@@ -598,7 +598,7 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
           <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+              <form id="contactForm" name="contact" method="POST" data-netlify="true">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -632,6 +632,7 @@
                     <div class="form-group">
                       <input
                         type="text"
+                        name="subject"
                         placeholder="Subject"
                         id="msg_subject"
                         class="form-control"
@@ -646,6 +647,7 @@
                       <textarea
                         class="form-control"
                         id="message"
+                        name="message"
                         placeholder="Your Message"
                         rows="5"
                         data-error="Write your message"
@@ -654,7 +656,6 @@
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button">
-                      <div data-netlify-recaptcha="true"></div>
                       <button
                         class="btn btn-common"
                         id="form-submit"
