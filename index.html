@@ -598,7 +598,7 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
           <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form id="contactForm" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -654,6 +654,7 @@
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button">
+                      <div data-netlify-recaptcha="true"></div>
                       <button
                         class="btn btn-common"
                         id="form-submit"
@@ -690,7 +691,7 @@
                   <div class="contact-icon">
                     <i class="lni-envelope"></i>
                   </div>
-                  <p><a href="#">Email: contact@stuck.com</a></p>
+                  <p><a href="#">Email: hello@devnoty.com</a></p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon">
