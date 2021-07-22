@@ -1,774 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Devnoty</title>
 
-    <!-- yandex verification -->
-    <meta name="yandex-verification" content="bb2cc08ee282281f" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- Icon -->
-    <link rel="stylesheet" href="assets/fonts/line-icons.css" />
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="assets/css/slicknav.css" />
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.css" />
-
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/nivo-lightbox.css" />
-    <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Responsive Style -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="https://kit.fontawesome.com/33c41c68c6.js"></script>
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav
-        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar"
-      >
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"
-            ><img id="logo" src="assets/img/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="lni-menu"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feature">
-                  Feature
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">
-                  Team
-                </a>
-              </li>
-              <li class="nav-item d-none">
-                <a class="nav-link" href="#portfolios">
-                  Portfolio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
+    <header class="border-b">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex justify-between">
+          <div class="flex items-center">
+            <img src="./logo.svg" class="h-16 w-16" alt="Logo" />
+            <span>Devnoty</span>
           </div>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="contents text-center">
-                <h2 class="head-title wow fadeInUp text-capitalize">
-                  We serve high quality, scalable software solutions <br />
-                  for your projects
-                </h2>
-                <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="#" class="btn btn-common">Learn More</a>
-                </div>
-              </div>
-              <div
-                class="img-thumb text-center wow fadeInUp"
-                data-wow-delay="0.6s"
-              >
-                <img class="img-fluid" src="assets/img/hero-1.png" alt="" />
-              </div>
-            </div>
+          <div class="flex space-x-6 items-center">
+            <div>Services</div>
+            <div>Team</div>
+            <div>Contact us</div>
           </div>
         </div>
       </div>
-      <!-- Hero Area End -->
     </header>
-    <!-- Header Area wrapper End -->
 
-    <!-- Feature Section Start -->
-    <div id="feature">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="text-wrapper">
-              <div>
-                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">
-                  We are helping bring your <br />
-                  dreams to life.
-                </h2>
-                <p class="mb-4">
-                  We have a team with highly experienced to build projects.
-                  After we understand your needs, we'll work on the best
-                  solutions for you.
-                </p>
-                <a href="#team" class="btn btn-common">More About Us</a>
+    <main class="space-y-32">
+      <section class="pt-16">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-12 gap-16 items-center">
+            <div class="col-span-7 space-y-8">
+              <div class="space-y-2">
+                <h1 class="text-4xl">Top class outsource</h1>
+                <h1 class="text-4xl text-red-500">design & development</h1>
               </div>
+              <p class="text-gray-500 leading-relaxed font-light">
+                We are a team of great minds with high spirits; building
+                products that amaze users for more than eleven years. When it
+                comes to building a marvelous product for you, we have a lot to
+                offer.
+              </p>
+              <button class="py-2 text-white bg-red-500 w-40 rounded-3xl">
+                Get in touch
+              </button>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 padding-none feature-bg">
-            <div class="feature-thumb">
-              <div
-                class="feature-item wow fadeInDown"
-                data-wow-duration="1000ms"
-                data-wow-delay="300ms"
-              >
-                <div class="icon">
-                  <i class="lni-microphone"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>WHAT WE DO?</h3>
-                  <p>
-                    We are mainly focused on Web and Mobile projects. Also, we
-                    serve cloud solutions to scale your projects to millions of
-                    users in high availability.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="feature-item wow fadeInDown"
-                data-wow-duration="1000ms"
-                data-wow-delay="500ms"
-              >
-                <div class="icon">
-                  <i class="lni-users"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>MEET OUR TEAM</h3>
-                  <p>
-                    Our team contains people who experienced in their area.
-                    Let's meet our team and make your dreams come true.
-                  </p>
-                </div>
-              </div>
+            <div class="col-span-5">
+              <img src="./hero.svg" alt="Hero image" class="w-full" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Feature Section End -->
+      </section>
 
-    <!-- Services Section Start -->
-    <section id="services" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
-            Our Services
-          </h2>
-          <p>
-            Here are the services we can serve that we worked on since 2013.
-          </p>
-        </div>
-        <div class="row">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 d-flex align-items-stretch">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="lni-cog"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Web Development</a></h3>
-                <p>
-                  Building your projects end-to-end. We use best technologies to
-                  make your product better.
-                </p>
-              </div>
+      <!-- services -->
+      <section>
+        <div class="max-w-5xl mx-auto space-y-16">
+          <h1 class="text-4xl text-gray-400">Services</h1>
+
+          <div class="grid grid-cols-12 gap-8 items-center">
+            <div class="col-span-5">
+              <img
+                src="./webdev.svg"
+                width="300"
+                height="300"
+                alt="Service One"
+              />
             </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 d-flex align-items-stretch">
-            <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="lni-mobile"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">iOS &amp; Android Development</a></h3>
-                <p>
-                  Building iOS and Android applications. We have platform based
-                  solutions and also hybrid solutions to turn your ideas into
-                  the reality.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12 d-flex align-items-stretch">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="lni-dashboard"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">UI/UX Design</a></h3>
-                <p>
-                  Building your projects end-to-end. We use best technologies to
-                  make your product better.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section End -->
-
-    <!-- Team Section Start -->
-    <section id="team" class="section-padding text-center">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
-            Meet our team
-          </h2>
-          <p>
-            A desire to help and empower others between community contributors
-            in technology <br />
-            began to grow in 2020.
-          </p>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <!-- Team Item Starts -->
-            <div
-              class="team-item text-center wow fadeInRight"
-              data-wow-delay="0.3s"
-            >
-              <div class="team-img">
-                <img
-                  class="img-fluid"
-                  src="assets/img/team/team-01.png"
-                  alt=""
-                />
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li>
-                        <a href="https://www.selahattinunlu.com"
-                          ><i class="lni-laptop" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/selahattinunlu"
-                          ><i class="lni-twitter-filled" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.github.com/selahattinunlu"
-                          ><i class="lni-github" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/selahattin.unlu"
-                          ><i
-                            class="lni-instagram-filled"
-                            aria-hidden="true"
-                          ></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Selahattin Ünlü</a></h3>
-                <p>Full Stack Developer</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <!-- Team Item Starts -->
-            <div
-              class="team-item text-center wow fadeInRight"
-              data-wow-delay="0.6s"
-            >
-              <div class="team-img">
-                <img
-                  class="img-fluid"
-                  src="assets/img/team/team-02.png"
-                  alt=""
-                />
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li>
-                        <a href="https://www.vedatkokmen.com"
-                          ><i class="lni-laptop" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/vedatkokmen"
-                          ><i class="lni-twitter-filled" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.github.com/vedatkokmen"
-                          ><i class="lni-github" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/vedatkokmen"
-                          ><i
-                            class="lni-instagram-filled"
-                            aria-hidden="true"
-                          ></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Vedat Kökmen</a></h3>
-                <p>Front End Developer</p>
-              </div>
-            </div>
-
-            <!-- Team Item Ends -->
-
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <!-- Team Item Starts -->
-            <div
-              class="team-item text-center wow fadeInRight"
-              data-wow-delay="0.3s"
-            >
-              <div class="team-img">
-                <img
-                  class="img-fluid"
-                  src="assets/img/team/team-03.jpg"
-                  alt=""
-                />
-                <div class="team-overlay">
-                  <div class="overlay-social-icon text-center">
-                    <ul class="social-icons">
-                      <li>
-                        <a href="https://www.twitter.com/samettylmzz"
-                          ><i class="lni-twitter-filled" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/sametceyhunn"
-                          ><i
-                            class="lni-instagram-filled"
-                            aria-hidden="true"
-                          ></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Samet Yılmaz</a></h3>
-                <p>Designer</p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Skills Area Start -->
-    <div class="skill-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-12 col-xs-12 wow fadeInLeft"
-            data-wow-delay="0.3s"
-          >
-            <div style="padding: 2rem">
-              <img class="img-fluid" src="assets/img/skills.svg" alt="" />
-            </div>
-          </div>
-          <div
-            class="col-lg-6 col-md-12 col-xs-12 info wow fadeInRight"
-            data-wow-delay="0.3s"
-          >
-            <div class="site-heading">
-              <h2 class="section-title">Our <span>Skill</span></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus architecto laudantium dolorem, aut aspernatur modi
-                minima alias provident obcaecati! Minima odio porro nemo magnam
-                dolore minus asperiores veniam dolorum est!
+            <div class="col-span-7 flex flex-col space-y-4">
+              <h1 class="text-3xl">Web Development</h1>
+              <p class="text-gray-500 leading-relaxed font-light">
+                We believe that the web is so important side to show your
+                product to customers. Building your websites with love is our
+                presure. We don’t want to have one time job. We want to build
+                long term relation with our customers. Helping to grow your
+                business is so important to us!
               </p>
             </div>
-            <div class="skills-section">
-              <!-- Progress Bar Start -->
-              <div class="progress-box">
-                <h5>Web Development <span class="pull-right">95%</span></h5>
-                <div class="progress" style="opacity: 1; left: 0px;">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="95"
-                    style="width: 95%;"
-                  ></div>
-                </div>
-              </div>
-              <!-- Progress Bar Start -->
-              <div class="progress-box">
-                <h5>
-                  Mobile and Desktop Solutions
-                  <span class="pull-right">90%</span>
-                </h5>
-                <div class="progress" style="opacity: 1; left: 0px;">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="90"
-                    style="width: 90%;"
-                  ></div>
-                </div>
-              </div>
-              <!-- Progress Bar Start -->
-              <div class="progress-box">
-                <h5>Designing <span class="pull-right">85%</span></h5>
-                <div class="progress" style="opacity: 1; left: 0px;">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="85"
-                    style="width: 85%;"
-                  ></div>
-                </div>
-              </div>
-              <!-- End Progressbar -->
-            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolios" class="section-padding">
-      <!-- Container Starts -->
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
-            Our Works
-          </h2>
-          <p>
-            A desire to help and empower others between community contributors
-            in technology <br />
-            began to grow in 2020.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center">
-              <a
-                class="filter active btn btn-common btn-effect"
-                data-filter="all"
-              >
-                All
-              </a>
-              <a class="filter btn btn-common btn-effect" data-filter=".design">
-                Design
-              </a>
-              <a
-                class="filter btn btn-common btn-effect"
-                data-filter=".development"
-              >
-                Development
-              </a>
+          <div class="grid grid-cols-12 gap-8 items-center">
+            <div class="col-span-5">
+              <img
+                src="./mobile.svg"
+                width="300"
+                height="300"
+                alt="Service One"
+              />
             </div>
-            <!-- Portfolio Controller/Buttons Ends-->
-          </div>
-        </div>
-
-        <!-- Portfolio Recent Projects -->
-        <div id="portfolio" class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 mix development design print">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="assets/img/portfolio/amcham.org.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a
-                          class="lightbox"
-                          href="assets/img/portfolio/big//amcham.png"
-                          ><i class="lni-eye item-icon"></i
-                        ></a>
-                      </div>
-                      <a href="http://amcham.org" target="_blank">amcham.org</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-span-7 flex flex-col space-y-4">
+              <h1 class="text-3xl">Mobile Applications</h1>
+              <p class="text-gray-500 leading-relaxed font-light">
+                We believe that the web is so important side to show your
+                product to customers. Building your websites with love is our
+                presure. We don’t want to have one time job. We want to build
+                long term relation with our customers. Helping to grow your
+                business is so important to us!
+              </p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 col-xs-12 mix development">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="assets/img/portfolio/vidobu.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a
-                          class="lightbox"
-                          href="assets/img/portfolio/big/vidobu.png"
-                          ><i class="lni-eye item-icon"></i
-                        ></a>
-                      </div>
-                      <a href="#">vidobu.com</a>
-                    </div>
-                  </div>
+          <div class="grid grid-cols-12 gap-8 items-center">
+            <div class="col-span-5">
+              <img
+                src="./maintenance.svg"
+                width="300"
+                height="300"
+                alt="Service One"
+              />
+            </div>
+            <div class="col-span-7 flex flex-col space-y-4">
+              <h1 class="text-3xl">Maintenance</h1>
+              <p class="text-gray-500 leading-relaxed font-light">
+                We believe that the web is so important side to show your
+                product to customers. Building your websites with love is our
+                presure. We don’t want to have one time job. We want to build
+                long term relation with our customers. Helping to grow your
+                business is so important to us!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- teams -->
+      <section>
+        <div class="max-w-5xl mx-auto space-y-16">
+          <h1 class="text-4xl text-gray-400">Team</h1>
+
+          <div class="grid grid-cols-3">
+            <div class="flex items-center justify-center">
+              <div class="flex-col items-center justify-center space-y-4">
+                <div class="bg-gray-300 rounded-full h-48 w-48"></div>
+                <div class="text-center space-y-1">
+                  <h1 class="text-xl">Nurullah Bozkurt</h1>
+                  <h1 class="text-sm font-extralight">Frontend Developer</h1>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 mix print development design">
-            <div class="portfolio-item">
-              <div class="shot-item">
-                <img src="assets/img/portfolio/incievdesaglik.jpg" alt="" />
-                <div class="single-content">
-                  <div class="fancy-table">
-                    <div class="table-cell">
-                      <div class="zoom-icon">
-                        <a
-                          class="lightbox"
-                          href="assets/img/portfolio/big/incievdesaglik.png"
-                          ><i class="lni-eye item-icon"></i
-                        ></a>
-                      </div>
-                      <a href="http://incievdesaglik.com">incievdesaglik.com</a>
-                    </div>
-                  </div>
+
+            <div class="flex items-center justify-center">
+              <div class="flex-col items-center justify-center space-y-4">
+                <div class="bg-gray-300 rounded-full h-48 w-48"></div>
+                <div class="text-center space-y-1">
+                  <h1 class="text-xl">Selahattin Ünlü</h1>
+                  <h1 class="text-sm font-extralight">Full Stack Developer</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <div class="flex-col items-center justify-center space-y-4">
+                <div class="bg-gray-300 rounded-full h-48 w-48"></div>
+                <div class="text-center space-y-1">
+                  <h1 class="text-xl">Vedat Kökmen</h1>
+                  <h1 class="text-sm font-extralight">Frontend Developer</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Container Ends -->
-    </section>
-    <!-- Portfolio Section Ends -->
+      </section>
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">
-      <div class="container">
-        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <div class="contact-block">
-              <form id="contactForm" name="contact" method="POST" data-netlify="true">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                        required
-                        data-error="Please enter your name"
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        id="email"
-                        class="form-control"
-                        name="email"
-                        required
-                        data-error="Please enter your email"
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                        id="msg_subject"
-                        class="form-control"
-                        required
-                        data-error="Please enter your subject"
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        name="message"
-                        placeholder="Your Message"
-                        rows="5"
-                        data-error="Write your message"
-                        required
-                      ></textarea>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="submit-button">
-                      <button
-                        class="btn btn-common"
-                        id="form-submit"
-                        type="submit"
-                      >
-                        Send Message
-                      </button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
+      <!-- contact -->
+      <section>
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-8">
+              <div class="space-y-2">
+                <h1 class="text-4xl">Top class outsource</h1>
+                <h1 class="text-4xl text-red-500">design & development</h1>
+              </div>
+              <p class="text-gray-500 leading-relaxed font-light">
+                We are a team of great minds with high spirits; building
+                products that amaze users for more than eleven years. When it
+                comes to building a marvelous product for you, we have a lot to
+                offer.
+              </p>
+              <button class="py-2 text-white bg-red-500 w-40 rounded-3xl">
+                Get in touch
+              </button>
+            </div>
+            <div class="">
+              <form class="space-y-6">
+                <div class="flex flex-col space-y-2">
+                  <label class="text-gray-500" htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="border border-gray-200 rounded-lg py-2 px-3"
+                  />
+                </div>
+                <div class="flex flex-col space-y-2">
+                  <label class="text-gray-500" htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="border border-gray-200 rounded-lg py-2 px-3"
+                  />
+                </div>
+                <div class="flex flex-col space-y-2">
+                  <label class="text-gray-500" htmlFor="message">Message</label>
+
+                  <textarea
+                    name="message"
+                    cols="5"
+                    rows="5"
+                    class="border border-gray-200 rounded-lg py-2 px-3"
+                  ></textarea>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="py-2 text-white bg-red-500 w-40 rounded-3xl"
+                    type="submit"
+                  >
+                    Send
+                  </button>
                 </div>
               </form>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <div class="contact-right-area wow fadeIn">
-              <div class="contact-title">
-                <h1>We're a friendly bunch..</h1>
-                <p>
-                  We create projects for companies and startups with a passion
-                  for quality
-                </p>
-              </div>
-              <h2>Contact Us</h2>
-              <div class="contact-right">
-                <div class="single-contact">
-                  <div class="contact-icon">
-                    <i class="lni-map-marker"></i>
-                  </div>
-                  <p>ADDRESS: Istanbul, Turkey</p>
-                </div>
-                <div class="single-contact">
-                  <div class="contact-icon">
-                    <i class="lni-envelope"></i>
-                  </div>
-                  <p><a href="#">Email: hello@devnoty.com</a></p>
-                </div>
-                <div class="single-contact">
-                  <div class="contact-icon">
-                    <i class="lni-phone-handset"></i>
-                  </div>
-                  <p><a href="#">Phone: +90 505 983 2193</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="flex justify-center py-8 mt-12">
+      <div>
+        <img src="./logo-grayscale.svg" class="h-16 w-16" alt="Logo" />
       </div>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Copyright Section Start -->
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-3 col-xs-12">
-            <div class="footer-logo">
-              <img src="assets/img/logo.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-xs-12">
-            <div class="social-icon text-center">
-              <a class="facebook" href="https://www.facebook.com/devnotylabs"
-                ><i class="lni-facebook-filled"></i
-              ></a>
-              <a class="twitter" href="https://www.twitter.com/devnotylabs"><i class="lni-twitter-filled"></i></a>
-              <a class="instagram" href="https://www.instagram.com/devnotylabs"
-                ><i class="lni-instagram-filled"></i
-              ></a>
-              <a class="linkedin" href="https://www.linkedin.com/company/devnoty"
-                ><i class="lni-linkedin-filled"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-5 col-xs-12">
-            <p class="float-right">
-              <a href="https://www.devnoty.com" rel="nofollow">Devnoty.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Copyright Section End -->
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lni-arrow-up"></i>
-    </a>
-
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader" id="loader-1"></div>
-    </div>
-    <!-- End Preloader -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <!-- <script src="assets/js/contact-form-script.min.js"></script> -->
+    </footer>
   </body>
 </html>
