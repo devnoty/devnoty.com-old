@@ -18,6 +18,10 @@
     <title>Devnoty | Software Development Agency</title>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
       html,
       body {
         font-family: "Poppins", sans-serif;
@@ -33,9 +37,9 @@
             <span class="font-medium text-lg">Devnoty</span>
           </div>
           <div class="flex space-x-6 items-center">
-            <div>Services</div>
-            <div>Team</div>
-            <div>Contact us</div>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact-us">Contact Us</a>
           </div>
         </div>
       </div>
@@ -68,7 +72,7 @@
       </section>
 
       <!-- services -->
-      <section>
+      <section id="services">
         <div class="max-w-5xl mx-auto space-y-16">
           <h1 class="text-4xl text-gray-400">Services</h1>
 
@@ -137,8 +141,8 @@
         </div>
       </section>
 
-      <!-- teams -->
-      <section>
+      <!-- team -->
+      <section id="team">
         <div class="max-w-5xl mx-auto space-y-16">
           <h1 class="text-4xl text-gray-400">Team</h1>
 
@@ -177,7 +181,7 @@
       </section>
 
       <!-- contact -->
-      <section>
+      <section id="contact-us">
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-2 gap-8">
             <div class="space-y-8">
