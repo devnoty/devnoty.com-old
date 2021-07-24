@@ -396,8 +396,13 @@
                 offer.
               </p>
             </div>
-            <div class="">
-              <form class="space-y-6">
+            <div class="space-y-6">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                class="space-y-6"
+              >
                 <div class="flex flex-col space-y-2">
                   <label class="text-gray-500" htmlFor="name">Name</label>
                   <input
@@ -434,6 +439,7 @@
                       rounded-3xl
                       hover:bg-red-600
                       transition
+                      disabled:opacity-50
                     "
                     type="submit"
                   >
@@ -441,6 +447,34 @@
                   </button>
                 </div>
               </form>
+
+              <div
+                id="contact-form-success-message"
+                class="
+                  hidden
+                  bg-green-50
+                  border border-green-100
+                  text-green-600
+                  rounded
+                  p-3
+                "
+              >
+                Your message has been sent! Thank you!
+              </div>
+
+              <div
+                id="contact-form-error-message"
+                class="
+                  hidden
+                  bg-red-50
+                  border border-red-100
+                  text-red-600
+                  rounded
+                  p-3
+                "
+              >
+                Please fill all form inputs
+              </div>
             </div>
           </div>
         </div>
