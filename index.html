@@ -38,14 +38,14 @@
   <body>
     <header class="border-b">
       <div class="max-w-5xl mx-auto">
-        <div class="flex justify-between">
-          <div class="-ml-4">
+        <div class="flex justify-center lg:justify-between">
+          <div class="lg:-ml-4">
             <a href="/" class="flex items-center">
               <img src="assets/images/logo.svg" class="h-16 w-16" alt="Logo" />
-              <span class="font-medium text-lg">Devnoty</span>
+              <span class="hidden font-medium text-lg lg:block">Devnoty</span>
             </a>
           </div>
-          <nav class="flex space-x-6 items-center">
+          <nav class="hidden space-x-6 items-center lg:flex">
             <a
               href="#services"
               data-role="navigation-link"
@@ -68,14 +68,16 @@
       </div>
     </header>
 
-    <main class="space-y-32">
-      <section class="pt-16">
-        <div class="max-w-5xl mx-auto">
-          <div class="grid grid-cols-12 gap-16 items-center">
-            <div class="col-span-7 space-y-8">
-              <div class="space-y-2">
-                <h1 class="text-4xl">Top class outsource</h1>
-                <h1 class="text-4xl text-red-500">design & development</h1>
+    <main class="space-y-16 lg:space-y-32">
+      <section class="pt-8 lg:pt-16">
+        <div class="max-w-5xl mx-auto px-6 lg:px-0">
+          <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-12">
+            <div class="space-y-6 lg:col-span-7 lg:space-y-8">
+              <div class="space-y-1 lg:space-y-2">
+                <h1 class="text-2xl lg:text-4xl">Top class outsource</h1>
+                <h1 class="text-2xl text-red-500 lg:text-4xl">
+                  design & development
+                </h1>
               </div>
               <p class="text-gray-500 leading-relaxed font-light">
                 We are a team of great minds with high spirits; building
@@ -99,7 +101,7 @@
                 Get in touch
               </button>
             </div>
-            <div class="col-span-5">
+            <div class="order-first lg:col-span-5 lg:order-none">
               <img
                 src="assets/images/hero.svg"
                 alt="Hero image"
@@ -112,11 +114,11 @@
 
       <!-- services -->
       <section id="services">
-        <div class="max-w-5xl mx-auto space-y-16">
+        <div class="max-w-5xl mx-auto space-y-16 px-6 lg:px-0">
           <h1 class="text-4xl text-gray-400">Services</h1>
 
-          <div class="grid grid-cols-12 gap-8 items-center">
-            <div class="col-span-5">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <div class="lg:col-span-5">
               <img
                 src="assets/images/webdev.svg"
                 width="300"
@@ -124,7 +126,7 @@
                 alt="Service One"
               />
             </div>
-            <div class="col-span-7 flex flex-col space-y-4">
+            <div class="lg:col-span-7 flex flex-col space-y-4">
               <h1 class="text-3xl">Web Development</h1>
               <p class="text-gray-500 leading-relaxed font-light">
                 We believe that the web is so important side to show your
@@ -136,8 +138,8 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-12 gap-8 items-center">
-            <div class="col-span-5">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <div class="lg:col-span-5">
               <img
                 src="assets/images/mobile.svg"
                 width="300"
@@ -145,7 +147,7 @@
                 alt="Service One"
               />
             </div>
-            <div class="col-span-7 flex flex-col space-y-4">
+            <div class="lg:col-span-7 flex flex-col space-y-4">
               <h1 class="text-3xl">Mobile Applications</h1>
               <p class="text-gray-500 leading-relaxed font-light">
                 We believe that the web is so important side to show your
@@ -157,8 +159,8 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-12 gap-8 items-center">
-            <div class="col-span-5">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <div class="lg:col-span-5">
               <img
                 src="assets/images/maintenance.svg"
                 width="300"
@@ -166,7 +168,7 @@
                 alt="Service One"
               />
             </div>
-            <div class="col-span-7 flex flex-col space-y-4">
+            <div class="lg:col-span-7 flex flex-col space-y-4">
               <h1 class="text-3xl">Maintenance</h1>
               <p class="text-gray-500 leading-relaxed font-light">
                 We believe that the web is so important side to show your
@@ -182,10 +184,10 @@
 
       <!-- team -->
       <section id="team">
-        <div class="max-w-5xl mx-auto space-y-16">
+        <div class="max-w-5xl mx-auto space-y-16 px-6 lg:px-0">
           <h1 class="text-4xl text-gray-400">Team</h1>
 
-          <div class="grid grid-cols-3">
+          <div class="grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-0">
             <div class="flex items-center justify-center">
               <div class="flex-col items-center justify-center space-y-4">
                 <div class="bg-gray-300 rounded-full h-48 w-48 overflow-hidden">
@@ -380,14 +382,16 @@
 
       <!-- contact -->
       <section id="contact-us">
-        <div class="max-w-5xl mx-auto space-y-16">
+        <div class="max-w-5xl mx-auto space-y-16 px-6 lg:px-0">
           <h1 class="text-4xl text-gray-400">Contact Us</h1>
 
-          <div class="grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div class="space-y-8">
-              <div class="space-y-2">
-                <h1 class="text-4xl">Top class outsource</h1>
-                <h1 class="text-4xl text-red-500">design & development</h1>
+              <div class="flex flex-col space-y-2">
+                <span class="text-2xl lg:text-4xl">Top class outsource</span>
+                <span class="text-2xl text-red-500 lg:text-4xl">
+                  design & development
+                </span>
               </div>
               <p class="text-gray-500 leading-relaxed font-light">
                 We are a team of great minds with high spirits; building
