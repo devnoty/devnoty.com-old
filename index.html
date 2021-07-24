@@ -42,9 +42,23 @@
             </a>
           </div>
           <nav class="flex space-x-6 items-center">
-            <a href="#services">Services</a>
-            <a href="#team">Team</a>
-            <a href="#contact-us">Contact Us</a>
+            <a
+              href="#services"
+              data-role="navigation-link"
+              data-href="#services"
+            >
+              Services
+            </a>
+            <a href="#team" data-role="navigation-link" data-href="#team">
+              Team
+            </a>
+            <a
+              href="#contact-us"
+              data-role="navigation-link"
+              data-href="#contact-us"
+            >
+              Contact Us
+            </a>
           </nav>
         </div>
       </div>
@@ -65,7 +79,11 @@
                 comes to building a marvelous product for you, we have a lot to
                 offer.
               </p>
-              <button class="py-2 text-white bg-red-500 w-40 rounded-3xl">
+              <button
+                class="py-2 text-white bg-red-500 w-40 rounded-3xl"
+                data-role="navigation-link"
+                data-href="#contact-us"
+              >
                 Get in touch
               </button>
             </div>
